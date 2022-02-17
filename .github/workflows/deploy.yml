@@ -31,7 +31,7 @@ jobs:
     - name: Install Rust (rustup)
       run: rustup update stable --no-self-update && rustup default stable
     - name: Build book
-      run: cargo run -- build guide
+      run: cargo run -- build
     - name: Deploy to GitHub
       env:
         GITHUB_DEPLOY_KEY: ${{ secrets.GITHUB_DEPLOY_KEY }}
